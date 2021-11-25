@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- 
+      This will add the JavaScript pack to our application header, which will cause all the JavaScript files, including React ones, to be executed within the index page.
+     -->
+    <%= javascript_pack_tag 'index' %>
+    
+    <title>ReactOnRails</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    <%= yield %>
+  </body>
+</html>

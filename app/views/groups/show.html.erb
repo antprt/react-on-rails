@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @group.name %>
+</p>
+
+<p>
+  <strong>Style:</strong>
+  <%= @group.style %>
+</p>
+
+<p>
+  <strong>Author:</strong>
+  <%= @group.author %>
+</p>
+
+<p>
+  <strong>Year:</strong>
+  <%= @group.year %>
+</p>
+
+<p>
+  <strong>Coac position:</strong>
+  <%= @group.coac_position %>
+</p>
+
+<p>
+  <strong>Image url:</strong>
+  <%= @group.image_url %>
+</p>
+
+<%= link_to 'Edit', edit_group_path(@group) %> |
+<%= link_to 'Back', groups_path %>
